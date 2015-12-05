@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="12">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5" />
+
+        <LinearLayout
+            android:id="@+id/root_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:id="@+id/ticket_front_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="@drawable/cnf_ticket_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/seven"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/from_station_name_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="VISHAKHAPATNAM"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/to_station_name_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="BANGALORE CY JN"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/from_station_code_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="VSKP"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_big" />
+
+                        <ImageView
+                            android:id="@+id/home_train_icon"
+                            android:layout_width="@dimen/seventeen"
+                            android:layout_height="@dimen/twenty"
+                            android:layerType="software" />
+
+                        <TextView
+                            android:id="@+id/to_station_code_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="SBC"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_big" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/from_station_dep_date_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="Tue, 20 oct"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/train_number_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="18463"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_medium" />
+
+                        <TextView
+                            android:id="@+id/to_station_arr_date_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Wed, 21 oct"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/from_station_dep_time_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="13:05"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/to_station_arr_time_home"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="12:05"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/home_quota_light"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="QUOTA"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/home_pnr_light"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="PNR"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/home_status_light"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="STATUS"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/home_quota"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="GN"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_medium" />
+
+                        <TextView
+                            android:id="@+id/home_pnr_number"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="614-223-7217"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_medium" />
+
+                        <TextView
+                            android:id="@+id/home_status"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="CNF"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_medium" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/home_services_light"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="SERVICES"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/home_duration_light"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="DURATION"
+                            android:textSize="@dimen/home_small" />
+
+                        <TextView
+                            android:id="@+id/home_class_light"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="CLASS"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/home_ticket_pantry"
+                                android:layout_width="@dimen/home_medium"
+                                android:layout_height="@dimen/home_medium"
+                                android:layout_marginRight="@dimen/seven" />
+
+                            <TextView
+                                android:id="@+id/home_ticket_internet"
+                                android:layout_width="@dimen/thirteen"
+                                android:layout_height="@dimen/home_medium"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/home_duration"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:text="12h 50m"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_medium" />
+
+                        <TextView
+                            android:id="@+id/home_class"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="2A"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/home_medium" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/home_last_updated_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Last Updated @ Wed, Sep 02, 2015 10:24:08 am"
+                    android:textSize="@dimen/home_small" />
+
+                <TextView
+                    android:id="@+id/home_charting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="CHART NOT PREPARED"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="left|bottom">
+
+                        <ImageView
+                            android:id="@+id/home_front_share"
+                            android:layout_width="@dimen/home_big"
+                            android:layout_height="@dimen/home_big"
+                            android:src="@drawable/home_share" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/passenger_details_button_light"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_weight="1"
+                        android:background="@drawable/rac_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/three"
+                        android:paddingLeft="@dimen/ten"
+                        android:paddingRight="@dimen/ten"
+                        android:paddingTop="@dimen/three"
+                        android:singleLine="true"
+                        android:text="Passenger Details"
+                        android:textSize="@dimen/home_medium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|bottom">
+
+                        <ImageView
+                            android:id="@+id/home_front_refresh"
+                            android:layout_width="@dimen/home_big"
+                            android:layout_height="@dimen/home_big"
+                            android:src="@drawable/home_refresh" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ticket_back_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:background="@drawable/cnf_ticket_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/seven"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="PASSENGER"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/home_small" />
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="STATUS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/home_small" />
+
+                    <TextView
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:text="POSSIBILITY"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/home_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_marginTop="@dimen/seven"
+                    android:layout_weight="1">
+
+                    <ListView
+                        android:id="@+id/home_ticket_psgr_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/seven"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="left|center">
+
+                        <ImageView
+                            android:id="@+id/home_back_share"
+                            android:layout_width="@dimen/home_big"
+                            android:layout_height="@dimen/home_big"
+                            android:src="@drawable/home_share" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ticket_details_button"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:layout_marginRight="@dimen/ten"
+                        android:layout_weight="1"
+                        android:background="@drawable/rac_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/three"
+                        android:paddingLeft="@dimen/ten"
+                        android:paddingRight="@dimen/ten"
+                        android:paddingTop="@dimen/three"
+                        android:text="Ticket Details"
+                        android:textSize="@dimen/home_medium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center">
+
+                        <ImageView
+                            android:id="@+id/home_back_refresh"
+                            android:layout_width="@dimen/home_big"
+                            android:layout_height="@dimen/home_big"
+                            android:src="@drawable/home_refresh" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

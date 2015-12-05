@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/five"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/super_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:paddingTop="@dimen/home_medium"
+        android:paddingBottom="@dimen/home_big"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small">
+
+        <TextView
+            android:id="@+id/train_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            android:paddingTop="@dimen/two"
+            android:paddingBottom="@dimen/two"
+            android:textColor="@color/white"
+            android:text="12004"/>
+
+        <TextView
+            android:id="@+id/train_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:paddingTop="@dimen/two"
+            android:singleLine="true"
+            android:paddingBottom="@dimen/two"
+            android:text="LJN SWARNA SHATABDI"/>
+
+        </LinearLayout>
+
+</LinearLayout>

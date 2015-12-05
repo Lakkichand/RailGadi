@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/two"
+        android:paddingRight="@dimen/two">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/station_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/five"
+                android:singleLine="true"
+                android:text="Station"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/thirty_five"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="@dimen/three"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/station_image"
+                android:layout_width="@dimen/twenty"
+                android:layout_height="@dimen/twenty"
+                android:src="@drawable/green_circle" />
+
+            <View
+                android:id="@+id/bottom_view"
+                android:layout_width="@dimen/three"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/two"
+                android:paddingTop="@dimen/two">
+
+                <TextView
+                    android:id="@+id/arr_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="sdfsdfsdf"
+                    android:paddingTop="@dimen/home_big"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/dep_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/one"
+                    android:singleLine="true"
+                    android:text="sdfsdfsdf"
+                    android:paddingBottom="@dimen/home_big"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hidden_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_two"
+        android:paddingLeft="@dimen/two"
+        android:paddingRight="@dimen/two"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/train_is_here"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/five"
+                android:singleLine="true"
+                android:text="@string/train_is_here"
+                android:textSize="@dimen/home_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/thirty_five"
+            android:layout_height="@dimen/thirty_five"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/current_train"
+                android:layout_width="@dimen/thirty_five"
+                android:layout_height="@dimen/thirty_five"
+                android:src="@drawable/train" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/intermediate_station_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/five"
+                android:singleLine="true"
+                android:textSize="@dimen/home_small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

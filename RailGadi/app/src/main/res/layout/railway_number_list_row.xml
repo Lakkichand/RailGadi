@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/five"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingLeft="@dimen/home_small">
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:layout_marginLeft="@dimen/five"
+            android:src="@drawable/cust_care_call_image" />
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/ten"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/railway_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_big"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/railway_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/home_medium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

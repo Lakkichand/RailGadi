@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/five"
+    android:paddingTop="@dimen/five">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/home_small">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/two"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five" >
+
+            <TextView
+                android:id="@+id/train_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tata Rtr Passenger"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve" />
+
+            <TextView
+                android:id="@+id/train_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five"
+                android:text="16588"
+                android:singleLine="true"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/twelve" />
+
+            <TextView
+                android:id="@+id/plt_no"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="PF no : 2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/home_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/train_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/home_medium"
+            android:text="Train Type: "
+            android:paddingTop="@dimen/two"
+            android:paddingBottom="@dimen/two"
+            android:paddingLeft="@dimen/five"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/two"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five"
+            android:paddingTop="@dimen/two">
+
+            <TextView
+                android:id="@+id/sta"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="left"
+                android:text="16:40"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/std"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="16:45"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/delay"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="00:25"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/eta"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="17:05"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/etd"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="17:10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five">
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/source_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/red"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:text="Src"
+                        android:singleLine="true"
+                        android:textSize="@dimen/home_medium"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/source_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/three"
+                        android:text="Tata nagar JN Tata"
+                        android:singleLine="true"
+                        android:textSize="@dimen/home_medium"
+                        android:textColor="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dest_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/red"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:singleLine="true"
+                        android:textSize="@dimen/home_medium"
+                        android:text="Dest."
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/dest_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:text="Itwari - ITR"
+                        android:singleLine="true"
+                        android:textSize="@dimen/home_medium"
+                        android:textColor="@color/light_gray" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

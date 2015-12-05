@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/home_small"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingBottom="@dimen/home_small"
+        android:paddingTop="@dimen/five">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/train_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Train Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve" />
+
+            <TextView
+                android:id="@+id/train_number"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="1"
+                android:text="Number"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/twelve" />
+
+            <TextView
+                android:id="@+id/train_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Superfast"
+                android:textColor="@color/red"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/partial_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/cancelled_from"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home_small" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/cancelled_to"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/home_small" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancel_from"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/start_time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/cancel_to"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="DELHI"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/three"
+            android:paddingTop="@dimen/two">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/src_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red"
+                    android:padding="@dimen/two"
+                    android:text="@string/src"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/src_name"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/two"
+                    android:text="Station Name"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/dest_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red"
+                    android:padding="@dimen/two"
+                    android:text="Dest."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/dest_name"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/two"
+                    android:text="Station Name"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fourty_five"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/departure_sort_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dep_sort_text"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DEPARTURE"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/departure_image_view"
+                    android:layout_width="@dimen/fifteen"
+                    android:layout_height="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/five"
+                    android:src="@drawable/polygon_down" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/departure_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arrival_sort_button"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/arr_sort_text"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ARRIVAL"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/arrival_image_view"
+                    android:layout_width="@dimen/fifteen"
+                    android:layout_height="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/five"
+                    android:src="@drawable/polygon_down" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/arrival_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/duration_sort_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dur_sort_text"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DURATION"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/duration_image_view"
+                    android:layout_width="@dimen/fifteen"
+                    android:layout_height="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/five"
+                    android:src="@drawable/polygon_down" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/duration_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:background="@color/transparent_two"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/available_train_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:divider="@null" />
+
+    </LinearLayout>
+</LinearLayout>

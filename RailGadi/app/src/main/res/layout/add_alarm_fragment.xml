@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/super_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/home_medium"
+        android:background="@color/transparent_two"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/find_train_background"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/five"
+            android:paddingLeft="@dimen/home_small"
+            android:paddingRight="@dimen/home_small"
+            android:paddingBottom="@dimen/home_small">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/five"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/five">
+
+                <TextView
+                    android:id="@+id/enter_trainnumber_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Train Number or Name"
+                    android:textSize="@dimen/ten" />
+
+                <com.railgadi.customUi.CustomAutoCompleteView
+                    android:id="@+id/enter_train_number_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/five"
+                    android:inputType="textPhonetic"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auto_search_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five"
+                android:visibility="gone"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_search_auto"
+                    android:gravity="center"
+                    android:textSize="@dimen/home_medium"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/city_click_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_medium"
+            android:layout_marginTop="@dimen/home_medium"
+            android:background="@drawable/find_train_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five">
+
+            <TextView
+                android:id="@+id/select_city_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/five"
+                android:text="@string/select_city"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_big" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/five"
+                android:paddingTop="@dimen/five">
+
+                <ImageView
+                    android:id="@+id/city_icon"
+                    android:layout_width="@dimen/thirty_five"
+                    android:layout_height="@dimen/thirty_five"
+                    android:layout_marginLeft="@dimen/five"
+                    android:src="@drawable/shape_logo" />
+
+                <TextView
+                    android:id="@+id/station_code"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_medium"
+                    android:layout_weight="0.7"
+                    android:text="From"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/other_big" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/station_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/home_big" />
+
+                    <TextView
+                        android:id="@+id/before_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Before : 10 km"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/home_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/range_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_medium"
+            android:background="@drawable/find_train_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/five"
+                android:paddingRight="@dimen/five">
+
+                <TextView
+                    android:id="@+id/select_range"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_range_from_station"
+                    android:textSize="@dimen/home_big" />
+
+                <TextView
+                    android:id="@+id/km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 Km"
+                    android:textSize="@dimen/home_big" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/distance_seekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="50"
+                android:progress="10" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="10" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="20" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="30" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="40" />
+
+                <TextView
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/home_medium">
+
+                <TextView
+                    android:id="@+id/about_alarm_note"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Note:"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/about_alarm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/home_medium"
+                    android:text="Please Make Sure Your GPS is ON to make Alarm Work"
+                    android:textAlignment="inherit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_big" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/station_chooser_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="@dimen/other_big"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/twenty" />
+
+            <TextView
+                android:id="@+id/station_list_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/title_text"
+                android:layout_weight="1"
+                android:text="List Title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/station_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

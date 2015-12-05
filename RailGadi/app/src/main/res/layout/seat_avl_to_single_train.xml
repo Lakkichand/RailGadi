@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/home_small"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small">
+
+        <LinearLayout
+            android:id="@+id/super_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/train_name_and_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/two"
+                        android:layout_marginBottom="@dimen/two"
+                        android:text="Train Name and number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fifteen" />
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/two"
+                        android:layout_marginBottom="@dimen/two"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/via_station_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Ahmedabad"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/ten" />
+
+                        <ImageView
+                            android:id="@+id/mid_arrow_trainlist"
+                            android:layout_width="@dimen/twenty"
+                            android:layout_height="@dimen/ten"
+                            android:layout_marginLeft="@dimen/five"
+                            android:layout_marginRight="@dimen/five"
+                            android:alpha="145"
+                            android:src="@drawable/shape_black_arrow" />
+
+                        <TextView
+                            android:id="@+id/to_station_code"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="Mumbai Central"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/ten" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/arr_dep_travel_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/two"
+                        android:layout_marginBottom="@dimen/two"
+                        android:textColor="@color/light_gray"
+                        android:text="03:50 - 22:00 ( 12 hr 39 m )"
+                        android:textSize="@dimen/ten" />
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/two"
+                        android:layout_marginBottom="@dimen/two"
+                        android:id="@+id/running_days"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="S"/>
+                        <TextView
+                            android:id="@+id/mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="M"/>
+                        <TextView
+                            android:id="@+id/tue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="T"/>
+                        <TextView
+                            android:id="@+id/wed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="W"/>
+                        <TextView
+                            android:id="@+id/thu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="T"/>
+                        <TextView
+                            android:id="@+id/fri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="F"/>
+                        <TextView
+                            android:id="@+id/sat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/ten"
+                            android:textColor="@color/light_gray"
+                            android:layout_marginRight="@dimen/three"
+                            android:text="S"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/train_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/home_medium"
+                    android:textColor="@color/red" />
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/popup_menu_button"
+                    android:layout_width="@dimen/twenty_five"
+                    android:layout_height="@dimen/twenty_five"
+                    android:layout_marginRight="@dimen/five"
+                    android:alpha="120"
+                    android:layout_marginTop="@dimen/five"
+                    android:src="@drawable/overflowicon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/hidden_station_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/total_fare_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="total fare"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/twenty" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/select_class_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Class"
+                    android:textSize="@dimen/ten" />
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/class_list_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/fourty"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/fourty"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingTop="@dimen/two">
+
+                        <TextView
+                            android:id="@+id/date_one"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="one"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/avl_one"
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:background="@drawable/green"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/two"
+                            android:paddingTop="@dimen/two"
+                            android:text="Status" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/fourty"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date_two"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="one"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/avl_to"
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/two"
+                            android:textColor="@color/white"
+                            android:paddingTop="@dimen/two"
+                            android:text="Status" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/fourty"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date_three"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="one"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/avl_three"
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/two"
+                            android:paddingTop="@dimen/two"
+                            android:text="Status" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/fourty"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date_four"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="one"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/avl_four"
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/two"
+                            android:textColor="@color/white"
+                            android:paddingTop="@dimen/two"
+                            android:text="Status" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/fourty"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date_five"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="one"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/avl_five"
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/two"
+                            android:textColor="@color/white"
+                            android:paddingTop="@dimen/two"
+                            android:text="Status" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/fourty"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/date_six"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="one"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/avl_six"
+                            android:layout_width="@dimen/hundred"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:background="@drawable/green"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/two"
+                            android:paddingTop="@dimen/two"
+                            android:text="Status" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/prev_six_days"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/two"
+                            android:layout_marginTop="@dimen/two"
+                            android:layout_weight="1"
+                            android:textColor="@color/light_gray"
+                            android:gravity="left|center"
+                            android:text="PREV 6 DAYS" />
+
+                        <TextView
+                            android:id="@+id/next_six_days"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="@dimen/five"
+                            android:gravity="right"
+                            android:textColor="@color/colorPrimary"
+                            android:paddingBottom="@dimen/two"
+                            android:paddingTop="@dimen/two"
+                            android:text="NEXT 6 DAYS" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

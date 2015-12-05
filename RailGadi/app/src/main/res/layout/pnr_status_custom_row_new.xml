@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:padding="@dimen/other_small">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pnr_train_name"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Shatabdi Express"
+                android:textColor="@color/black"
+                android:textSize="@dimen/other_medium" />
+
+            <TextView
+                android:id="@+id/train_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TYPE"
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pnr_from_station_code"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="AHM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/other_big" />
+
+                        <TextView
+                            android:id="@+id/pnr_from_station_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Ahmedabad"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/thirty"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shapearrow" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pnr_to_station_code"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="BCT"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/other_big" />
+
+                        <TextView
+                            android:id="@+id/pnr_to_station_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="Mumbai Central"
+                            android:textSize="@dimen/home_small" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:id="@+id/pnr_status_textview"
+                        android:layout_width="@dimen/seventy"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/other_small"
+                        android:paddingRight="@dimen/other_small"
+                        android:singleLine="true"
+                        android:text="W/L 14"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/other_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pnr_date_of_journey"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="5 Jun, 22:10"
+                    android:textSize="@dimen/other_small" />
+
+                <TextView
+                    android:id="@+id/pnr_number_of_passenger"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="6 passengers"
+                    android:textSize="@dimen/other_small" />
+
+                <TextView
+                    android:id="@+id/pnr_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="256-895-5697"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/other_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

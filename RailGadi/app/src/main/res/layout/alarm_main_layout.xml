@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:id="@+id/super_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent_two"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/saved_alarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/twenty"
+            android:paddingLeft="@dimen/five"
+            android:layout_marginBottom="@dimen/twenty"
+            android:text="Saved Alarms:"/>
+
+        <ListView
+            android:id="@+id/all_alarm_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/no_saved_alarm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="No Saved Alarm"/>
+
+</LinearLayout>

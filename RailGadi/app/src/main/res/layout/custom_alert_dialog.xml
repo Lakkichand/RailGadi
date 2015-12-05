@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+    <!--
+    <TextView 
+        android:id="@+id/data_alert_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection"
+        android:textSize="@dimen/twenty"
+        android:layout_margin="@dimen/ten"
+        android:textColor="@color/black"/>
+    
+    <Button 
+        android:id="@+id/data_alert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/five"/>-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fifteen"
+        android:paddingBottom="@dimen/fifteen"
+        android:paddingLeft="@dimen/ten"
+        android:paddingRight="@dimen/ten"
+        android:text="@string/action_settings"
+        android:textSize="@dimen/twenty"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/one"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/data_alert_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Open your Internet"
+        android:paddingTop="@dimen/fifteen"
+        android:paddingBottom="@dimen/fifteen"
+        android:paddingLeft="@dimen/ten"
+        android:paddingRight="@dimen/ten"/>
+
+    <Button
+        android:id="@+id/data_alert_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/find_train_button_selector"
+        android:padding="@dimen/ten"
+        android:text="OK"/>
+
+</LinearLayout>

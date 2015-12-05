@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/find_train_background"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:padding="@dimen/home_big">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/enter_pnr_edittext"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:gravity="center"
+                android:hint="Enter your Ticket PNR here"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/home_big"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/search_voice_btn"
+                android:layout_width="@dimen/other_big"
+                android:layout_height="@dimen/other_big"
+                android:src="@drawable/voice_search" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one"
+            android:layout_marginTop="@dimen/five"
+            android:background="@color/pnr_line" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/five"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:id="@+id/passenger_text"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="PASSENGER"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_big" />
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="STATUS"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_big" />
+
+            <TextView
+                android:id="@+id/possibility_text"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="POSSIBILITY"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_big" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/predictor_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/light_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

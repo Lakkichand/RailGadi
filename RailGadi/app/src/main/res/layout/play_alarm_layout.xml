@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="@dimen/two_hundred"
+        android:layout_height="@dimen/two_hundred"
+        android:layout_marginRight="@dimen/ten"
+        android:src="@drawable/alarm_image" />
+
+    <TextView
+        android:id="@+id/stop_alarm_button"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/ten"
+        android:paddingBottom="@dimen/ten"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        android:background="@drawable/find_train_button_selector"
+        android:textColor="@color/white"
+        android:text="STOP ALARM"/>
+
+</LinearLayout>

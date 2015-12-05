@@ -1,0 +1,107 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--new font sizes-->
+    <dimen name="title_text">17dp</dimen>
+    <dimen name="home_small">7dp</dimen>
+    <dimen name="home_medium">9dp</dimen>
+    <dimen name="home_big">14dp</dimen>
+    <dimen name="home_train_width">16dp</dimen>
+    <dimen name="home_train_height">19dp</dimen>
+    <dimen name="other_big">23dp</dimen>
+    <dimen name="other_medium">13dp</dimen>
+    <dimen name="other_small">9dp</dimen>
+    <dimen name="tabs_text_size">8dp</dimen>
+    <dimen name="trips_tabs_text_size">7dp</dimen>
+
+
+    <dimen name="title_bar_text_size">17dp</dimen>
+
+
+    <dimen name="welcome_to_railgadi_text">16dp</dimen>
+    <dimen name="you_can_see_pnr_text">10dp</dimen>
+    <dimen name="home_railgadi_icon_size">100dp</dimen>
+    <dimen name="enter_your_ticket_pnr_size">15dp</dimen>
+
+
+
+    <dimen name="nagative_four_half">-4.5dp</dimen>
+    <dimen name="nagative_two">-2.0dp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="nine">9dp</dimen>
+    <dimen name="ten">9dp</dimen>
+    <dimen name="eleven">10dp</dimen>
+    <dimen name="twelve">11dp</dimen>
+    <dimen name="thirteen">12dp</dimen>
+    <dimen name="fourteen">13dp</dimen>
+    <dimen name="fifteen">13dp</dimen>
+    <dimen name="sixteen">14dp</dimen>
+    <dimen name="seventeen">15dp</dimen>
+    <dimen name="eighteen">16dp</dimen>
+    <dimen name="nineteen">17dp</dimen>
+    <dimen name="twenty">19dp</dimen>
+    <dimen name="twenty_one">20dp</dimen>
+    <dimen name="twenty_two">21dp</dimen>
+    <dimen name="twenty_three">22dp</dimen>
+    <dimen name="twenty_four">22dp</dimen>
+    <dimen name="twenty_five">23dp</dimen>
+    <dimen name="twenty_six">24dp</dimen>
+    <dimen name="twenty_seven">25dp</dimen>
+    <dimen name="twenty_eight">26dp</dimen>
+    <dimen name="twenty_nine">27dp</dimen>
+    <dimen name="thirty">29dp</dimen>
+    <dimen name="thirty_one">30dp</dimen>
+    <dimen name="thirty_two">31dp</dimen>
+    <dimen name="thirty_three">32dp</dimen>
+    <dimen name="thirty_four">33dp</dimen>
+    <dimen name="thirty_five">34dp</dimen>
+    <dimen name="thirty_six">35dp</dimen>
+    <dimen name="thirty_seven">36dp</dimen>
+    <dimen name="thirty_eight">37dp</dimen>
+    <dimen name="thirty_nine">38dp</dimen>
+    <dimen name="forty">38dp</dimen>
+    <dimen name="forty_one">39dp</dimen>
+    <dimen name="forty_two">40dp</dimen>
+    <dimen name="forty_three">41dp</dimen>
+    <dimen name="forty_four">42dp</dimen>
+    <dimen name="forty_five">43dp</dimen>
+    <dimen name="forty_six">44dp</dimen>
+    <dimen name="forty_seven">45dp</dimen>
+    <dimen name="forty_eight">46dp</dimen>
+    <dimen name="forty_nine">47dp</dimen>
+    <dimen name="fifty">48dp</dimen>
+
+    <dimen name="sixty">55dp</dimen>
+    <dimen name="seventy">65dp</dimen>
+    <dimen name="eighty">75dp</dimen>
+    <dimen name="hundred">90dp</dimen>
+    <dimen name="one_fifty">135dp</dimen>
+    <dimen name="menu_txt_size">12sp</dimen>
+    <dimen name="seventy_two">66dp</dimen>
+    <dimen name="fourty">38dp</dimen>
+
+
+    <dimen name="dimen_margin_circle">4dp</dimen>
+    <dimen name="dimen_margin_circle.negative">-4dp</dimen>
+    <dimen name="fourty_five">43dp</dimen>
+    <dimen name="one_seventy">160dp</dimen>
+    <dimen name="two_fifty">235dp</dimen>
+    <dimen name="fifty_five">50dp</dimen>
+    <dimen name="fifty_six">51dp</dimen>
+    <dimen name="three_hundred">250dp</dimen>
+    <dimen name="two_hundred">180dp</dimen>
+    <dimen name="one_thirty">115dp</dimen>
+
+</resources>

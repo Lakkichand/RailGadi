@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/super_layout"
+        android:background="@drawable/find_train_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_two"
+            android:padding="@dimen/three"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/live_status_text"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Live Status :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+                <ImageView
+                    android:id="@+id/refresh_live_tracking"
+                    android:layout_width="@dimen/other_big"
+                    android:layout_height="@dimen/other_big"
+                    android:src="@drawable/refresh" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/last_delay_factor"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textSize="@dimen/home_medium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/current_delay_factor"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/home_medium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/next_distance_ahead"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/home_medium"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/home_medium"
+                android:paddingRight="@dimen/home_medium"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/last_image"
+                    android:layout_width="@dimen/twenty_five"
+                    android:layout_height="@dimen/twenty_five"
+                    android:src="@drawable/green_circle" />
+
+                <View
+                    android:id="@+id/last_view"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="@dimen/two"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray" />
+
+                <ImageView
+                    android:id="@+id/current_image"
+                    android:layout_width="@dimen/thirty_five"
+                    android:layout_height="@dimen/thirty_five"
+                    android:src="@drawable/train" />
+
+                <View
+                    android:id="@+id/next_view"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="@dimen/two"
+                    android:layout_weight="1"
+                    android:background="@color/black" />
+
+                <ImageView
+                    android:id="@+id/next_image"
+                    android:layout_width="@dimen/twenty_five"
+                    android:layout_height="@dimen/twenty_five"
+                    android:src="@drawable/red_circle" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/current_station"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/home_medium"
+                android:layout_margin="@dimen/two"
+                android:text="Current station"
+                android:textColor="@color/red"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/last_station_name"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twelve" />
+
+                    <TextView
+                        android:id="@+id/next_station_name"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twelve" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/last_station_time_pf"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/home_small" />
+
+                    <TextView
+                        android:id="@+id/next_station_time_pf"
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/home_small" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/last_updated"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Last Updated @ 8:00 am"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

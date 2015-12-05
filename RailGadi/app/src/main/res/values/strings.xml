@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">RailGadi</string> -->
+    <string name="app_home_name">HOME</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="check_pnr_hint">Enter PNR number</string>
+    <string name="chech_pnr">Check PNR</string>
+    <string name="upcomming_button">Upcoming</string>
+    <string name="completed_button">Complete</string>
+    <string name="others_button">Others</string>
+    <string name="read_irctc_msg">Read IRCTC Msg</string>
+    <string name="title_pnr">PNR</string>
+    <string name="sync_pnr">Sync PNR</string>
+    <string name="search_pnr_status">Search PNR Status</string>
+    <string name="rs_symbol">\u20B9</string>
+    <string name="getting_trips">Getting Trips \n Please Wait...</string>
+    <string name="save">Save</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="date">Date</string>
+    <string name="temp_date">25th Jun</string>
+    <string name="select_quote">Select Quote</string>
+    <string name="include_trains_txt">Include Weekly Trains</string>
+    <string name="find_trains">Find Trains</string>
+    <string name="what_ever_you_need">What ever you need for indian rail we have it</string>
+    <string name="search_stations">Search Stations</string>
+    <string name="recent_searched">Recent Searched</string>
+    <string name="popular_cities">Popular Cities</string>
+    <string name="duration">DURATION</string>
+    <string name="share">Share</string>
+    <string name="cont_menu">Menu</string>
+    <string name="history">Recent History</string>
+    <string name="home_screen_name"><small>HOME</small></string>
+    <string name="route_map">Map View</string>
+    <string name="route_list">List View</string>
+    <string name="no_upcoming_trips">No Upcoming Trips</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="delete_pnr_dialog_text">Are you sure ? \n you want to delete</string>
+    <string name="alert">Alert</string>
+    <string name="delete">Delete</string>
+    <string name="select_city">Select City</string>
+    <string name="select_station">Select Station</string>
+    <string name="via_light_text">Via (Optional)</string>
+    <string name="adult_age">ADULT AGE [12 and above]</string>
+    <string name="not_available">NA</string>
+    <string name="enter_train_number">Enter Train Name or Number</string>
+
+    <string name="amenities">Amenities</string>
+
+    <string name="popular_stations">Popular Stations</string>
+    <string name="recent_search">Recent Search</string>
+    <string name="all_station">All Stations</string>
+
+    <string name="train_route">Train Route</string>
+
+    <string name="select_departure">Select Departure</string>
+    <string name="select_arrival">Select Arrival</string>
+    <string name="select_via">Select Via</string>
+
+    <string name="pnr_status">PNR Status</string>
+
+    <string name="gps_dialog_title">Please enable location</string>
+    <string name="gps_dialog_msg">RailGadi shows you nearby</string>
+
+    <string name="getting_location">Getting Location</string>
+
+    <string name="enable_location_msg">Enable Location Provider</string>
+    <string name="internet_on">Please Check your Internet settings</string>
+
+    <string-array name="railway_numbers">
+        <item>139</item>
+        <item>09760534057</item>
+        <item>09760534063</item>
+        <item>09760534083</item>
+        <item>09760500000</item>
+        <item>1802661332</item>
+        <item>09760534069</item>
+        <item>09760534073</item>
+        <item>09920142151</item>
+        <item>09760534060</item>
+    </string-array>
+    <string-array name="railway_name">
+        <item>Customer Care</item>
+        <item>Coach Related</item>
+        <item>RPF and Security</item>
+        <item>FOOD</item>
+        <item>Cleaning</item>
+        <item>Enquiry</item>
+        <item>Drinking Water</item>
+        <item>Medical</item>
+        <item>Enquiry</item>
+        <item>Electric</item>
+    </string-array>
+
+    <!-- security and preferences -->
+    <string name="tutorial_lock">TutorialLock</string>
+    <string name="db_encryption_key">BhartiyaRailBESTRAIL</string>
+    <string name="rail_api_lock_key">RailGadiTheIndianRailApp</string>
+    <string name="gcm_api_key">794011495542</string>
+    <string name="facebook_app_id">120091548351249</string>
+    <string name="timetable_pref_key">rail_gadi_timetable_preference</string>
+    <string name="live_train_recent_preference">rail_gadi_live_train_recent_preference</string>
+    <string name="fare_enq_history_pref_key">fare_enq_history_key_railgadi</string>
+    <string name="seat_avl_history_pref_key">seat_avl_history_key_railgadi</string>
+    <string name="findtrain_history_key">find_train_history_key</string>
+    <string name="removable_pnr_pref_key">removable_pnr_list</string>
+    <string name="my_live_journey_key">my_live_journey_key</string>
+    <string name="live_train_tracking_key">live_train_tracking_key</string>
+    <string name="pnr_pref_handler_key">rail_gadi_map_holder</string>
+    <string name="session_pref_key">session_preference</string>
+    <string name="alarm_pref_key">savedAlarmKey</string>
+    <string name="alarm_pref_name">savedAlarmPrefName</string>
+
+    <!--<string name="google_map_key_android">AIzaSyAJy917PszWskGjw_O0EanCn5eb7VcCVIg</string>-->
+    <string name="google_map_key_android">AIzaSyAmGZ4rC7h8kOzOtwgTLIY19FyYOkGxTtA</string>
+    <string name="rail_api_key">NOg+Z51PF/U3cnC7qpFpronDLVxUGF02tJxCEgoLzwPEcoIhmU6QRw</string>
+    <string name="amenities_key">AIzaSyDo6IK_C7RJkD9QcVDHL02CalaAdrzjXNo</string>
+    <string name="google_analytic_tracking_id">UA-69738694-1</string>
+
+    <!-- async task dialog -->
+    <string name="loading">Loading...</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="getting_near_by">Getting Near By...</string>
+    <string name="refreshing">Refreshing...</string>
+    <string name="getting_special_trains">Getting Special Trains</string>
+    <string name="getting_trains">Getting Trains</string>
+    <string name="verifying">Verifying...</string>
+
+    <string-array name="nav_menu_titles">
+        <item>Setting</item>
+        <item>Seat Map</item>
+        <item>Saved Info</item>
+        <item>Rate Us</item>
+        <item>Share</item>
+        <item>About</item>
+        <item>More Apps</item>
+        <item>Quit</item>
+    </string-array>
+    <string-array name="quota_codes_array">
+        <item>GN</item>
+        <item>CK</item>
+        <item>PT</item>
+        <item>DF</item>
+        <item>DP</item>
+        <item>SS</item>
+        <item>FT</item>
+        <item>GNRS</item>
+        <item>HO</item>
+        <item>LB</item>
+        <item>LD</item>
+        <item>OS</item>
+        <item>PH</item>
+        <item>HP</item>
+        <item>PQ</item>
+        <item>RC(RAC)</item>
+        <item>RE</item>
+        <item>RS</item>
+        <item>YU</item>
+    </string-array>
+    <string-array name="quota_names_array">
+        <item>General</item>
+        <item>Tatkal</item>
+        <item>Premium Tatkal</item>
+        <item>Defence</item>
+        <item>Duty Pass</item>
+        <item>Female(above 45 years)/Senior Citizon/Travelling alone</item>
+        <item>Foreign Tourist</item>
+        <item>General Quota Road Side</item>
+        <item>Head Quarters/ High Official</item>
+        <item>Lower Berth</item>
+        <item>Ladies</item>
+        <item>Out Station</item>
+        <item>Parliament House</item>
+        <item>Physically Handicapped</item>
+        <item>Pooled</item>
+        <item>Reservation Against Cancellation</item>
+        <item>Railway Employees Staff on Duty for the train</item>
+        <item>Road Side</item>
+        <item>Yuva</item>
+    </string-array>
+    <string-array name="time_hours">
+        <item>Any Time</item>
+        <item>00:00 hr.</item>
+        <item>01:00 hr.</item>
+        <item>02:00 hr.</item>
+        <item>03:00 hr.</item>
+        <item>04:00 hr.</item>
+        <item>05:00 hr.</item>
+        <item>06:00 hr.</item>
+        <item>07:00 hr.</item>
+        <item>08:00 hr.</item>
+        <item>09:00 hr.</item>
+        <item>10:00 hr.</item>
+        <item>11:00 hr.</item>
+        <item>12:00 hr.</item>
+        <item>13:00 hr.</item>
+        <item>14:00 hr.</item>
+        <item>15:00 hr.</item>
+        <item>16:00 hr.</item>
+        <item>17:00 hr.</item>
+        <item>18:00 hr.</item>
+        <item>19:00 hr.</item>
+        <item>20:00 hr.</item>
+        <item>21:00 hr.</item>
+        <item>22:00 hr.</item>
+        <item>23:00 hr.</item>
+        <item>24:00 hr.</item>
+    </string-array>
+    <string-array name="select_age_array">
+        <item>CHILD AGE [5-11]</item>
+        <item>ADULT AGE [12 and above]</item>
+        <item>SENIOR CITIZEN FEMALE AGE [58 and above]</item>
+        <item>SENIOR CITIZEN MALE AGE [60 and above]</item>
+    </string-array>
+
+    <string name="more_info_live_journey">1. more info dummy text more info dummy text more info dummy text more info dummy text
+                                            more info dummy text more info dummy text more info dummy text
+                                    \n2. more info dummy text more info dummy text more info dummy text more info dummy text
+                                    more info dummy text more info dummy text more info dummy text more info dummy text more info dummy text
+                                    \n3. more info dummy text more info dummy text more info dummy text more info dummy text more info dummy text
+                                    more info dummy text more info dummy text more info dummy text more info dummy text
+                                    \n4. more info dummy text more info dummy text more info dummy text more info dummy text more info dummy text
+                                    more info dummy text more info dummy text more info dummy text more info dummy text
+                                    more info dummy text more info dummy text more info dummy text more info dummy text</string>
+
+
+    <!-- navigation drawer items -->
+
+    <string name="home">Home</string>
+    <string name="search_train">Search Trains</string>
+    <string name="trips">PNR/Trips</string>
+    <string name="irctc">IRCTC</string>
+    <string name="search_pnr">Search PNR</string>
+    <string name="seat_availability">Seat Availability</string>
+    <string name="train_timetable">Train Timetable</string>
+    <string name="fare_enquiry">Fare Enquiry</string>
+    <string name="seat_map">Seat Map</string>
+    <string name="live_station">Live Station</string>
+    <string name="curr_book_avl">Current Booking Availability</string>
+    <string name="coach_composition">Coach Composition</string>
+    <string name="rec_div_can">Resc/Div/Can</string>
+    <string name="time_table">Time Table</string>
+    <string name="fare_breakup">Fare Breakup</string>
+    <string name="irctc_booking">IRCTC Booking</string>
+    <string name="grp">GRP</string>
+    <string name="trains">Trains</string>
+    <string name="live_trains">Live Trains</string>
+    <string name="feed_back">Feedback</string>
+    <string name="book_tasty_meal">Book Tasty Meals</string>
+    <string name="station_alarm">Station Alarm</string>
+    <string name="locate_nearby_stations">Locate Nearby Stations</string>
+    <string name="my_live_journey">My Live Journey</string>
+    <string name="about_app">About App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_our_awesome_app">Share Our Awesome App</string>
+    <string name="special_trains">Special Trains</string>
+    <string name="indian_rail_customer_care">Railway Numbers</string>
+    <string name="railway_menu_price">Railway Menu Price List</string>
+    <string name="locate_near_by_trains">Locate Nearby Trains</string>
+    <string name="pnr_conf_predictor">PNR Confirmation Predictor</string>
+    <string name="seat_birth_calculator">Seat Birth Calculator</string>
+    <string name="track_your_train">Track Your Train</string>
+    <string name="speedometer">Speedometer</string>
+    <string name="station_information">Station Information</string>
+    <string name="ntes_in_mobile_view">NTES in Mobile View</string>
+    <string name="irctc_booking_cancellation">IRCTC Login</string>
+    <string name="user_preferences_app_settings">User Preference</string>
+    <string name="start_time">START TIME</string>
+    <string name="resch_time">RESCH. TIME</string>
+    <string name="delay_hrs">DELAY (HRS)</string>
+
+
+
+    <string name="get_timetable">Get Timetable</string>
+    <string name="recent_trains">Recent Trains</string>
+    <string name="clear_recent_trains">Clear All</string>
+    <string name="concession">Concession</string>
+    <string name="select_age">Select Age</string>
+    <string name="get_availability">Get Availability</string>
+    <string name="none">None</string>
+    <string name="favorites_trains">Favourites Trains</string>
+    <string name="normal">Normal</string>
+    <string name="tatkal">Tatkal</string>
+    <string name="pre_tatkal">Pre. Tatkal</string>
+    <string name="no_fav_trains">No Favourite Trains</string>
+    <string name="show_status">Show Status</string>
+    <string name="select_date">Select Date</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="req_free_call_back">REQUEST FREE CALL BACK</string>
+    <string name="select_range_from_station">Select Range From Station</string>
+    <string name="first_version">Version 1.0</string>
+    <string name="from_to_and_running_days">From 15 feb 2015 to 30 feb 2015</string>
+    <string name="enter_your_seat_number">Enter Your Seat Number</string>
+    <string name="enter_your_class">Enter Your Class</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="track_now">TRACK NOW</string>
+    <string name="quit">Quit</string>
+    <string name="important_station">Only Important Station</string>
+
+    <!-- String Arrays Navigation Drawer Items -->
+
+    <string-array name="drawer_group_heading_array">
+        <item>Home</item>
+        <item>PNR/Trips</item>
+        <item>Trains</item>
+        <item>Live</item>
+        <item>Seat Availability/Fare</item>
+        <item>IRCTC Login</item>
+        <item>Advanced Features</item>
+        <item>Utilities</item>
+        <!--<item>My Live Journey</item>-->
+        <item>NTES in Mobile View</item>
+        <item>User Preference</item>
+        <item>Help</item>
+        <item>About App</item>
+        <item>Quit</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_home">
+        <item>Home</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_pnr">
+        <item>Trips</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_trains">
+        <item>Search Trains</item>
+        <item>Train Timetable</item>
+        <item>Special Trains</item>
+        <item>Resc/Div/Can</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_live">
+        <item>Live Trains</item>
+        <item>Live Station</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_seat_fare">
+        <item>Seat Availability</item>
+        <item>Current Booking Availability</item>
+        <item>Fare Enquiry</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_irctc">
+        <item>IRCTC Login</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_advance">
+        <item>Track Your Train</item>
+        <item>Locate Nearby Stations</item>
+        <item>Locate Nearby Trains</item>
+        <item>Station Alarm</item>
+        <item>Speedometer</item>
+        <!--<item>PNR Confirmation Predictor</item>-->
+    </string-array>
+
+    <string-array name="drawer_child_text_array_misc">
+        <item>Coach Composition</item>
+        <!--<item>Seat Birth Calculator</item>-->
+        <!--<item>Railway Menu Price List</item>-->
+        <item>Station Information</item>
+        <item>Seat Map</item>
+    </string-array>
+
+<!--
+
+    <string-array name="drawer_child_text_array_live_journey">
+        <item>My Live Journey</item>
+    </string-array>
+-->
+
+    <string-array name="drawer_child_text_array_ntes">
+        <item>NTES in Mobile View</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_user_p">
+        <item>User Preference/App Settings</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_help">
+        <item>Railway Numbers</item>
+        <item>GRP</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_app">
+        <item>About App</item>
+        <item>Help</item>
+    </string-array>
+
+    <string-array name="drawer_child_text_array_quit">
+        <item>Quit</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+    <!-- CONCESSIONS CODES -->
+
+    <string-array name="conc_codes">
+        <item>ZZZZZZ</item>
+        <item>APLANM</item>
+        <item>ARJAWD</item>
+        <item>ARJCOM</item>
+        <item>ARTCLK</item>
+        <item>ARTISF</item>
+        <item>ARTIUF</item>
+        <item>AWD50</item>
+        <item>AWD75</item>
+        <item>AWD100</item>
+        <item>BSGUDF</item>
+        <item>BSDALF</item>
+        <item>BLIND</item>
+        <item>BLNDRS</item>
+        <item>BLESRS</item>
+        <item>CAN100</item>
+        <item>CANCER</item>
+        <item>CNESC</item>
+        <item>CANCEU</item>
+        <item>CNESCU</item>
+        <item>DOCTOR</item>
+        <item>DROAWD</item>
+        <item>DROCOM</item>
+        <item>FLMTCL</item>
+        <item>FLMTCU</item>
+        <item>PUBEXA</item>
+        <item>CIRCLF</item>
+        <item>CIRCUF</item>
+        <item>CVINTF</item>
+        <item>DFDM</item>
+        <item>DFDESC</item>
+        <item>HNDCAP</item>
+        <item>HNDESC</item>
+        <item>HNDCUP</item>
+        <item>HNDCUP</item>
+        <item>HNDEUP</item>
+        <item>HNDCRS</item>
+        <item>HNDERS</item>
+        <item>HEART</item>
+        <item>HRTESC</item>
+        <item>HEARTU</item>
+        <item>HRTESU</item>
+        <item>HMPHL</item>
+        <item>HMPESC</item>
+        <item>I1709A</item>
+        <item>I1720U</item>
+        <item>MNTERS</item>
+        <item>MNTLRS</item>
+        <item>WORKER</item>
+        <item>KIDNEY</item>
+        <item>KIESC</item>
+        <item>KIDNEU</item>
+        <item>KIESCU</item>
+        <item>KISANF</item>
+        <item>LPROSY</item>
+        <item>MNTLPT</item>
+        <item>NURSE</item>
+        <item>POLO</item>
+        <item>PARTLF</item>
+        <item>PARTUF</item>
+        <item>PTOFOR</item>
+        <item>PTORDR</item>
+        <item>PUBESC</item>
+        <item>SEARCH</item>
+        <item>RRECOM</item>
+        <item>SCOUTF</item>
+        <item>SICANM</item>
+        <item>SPL25R</item>
+        <item>SPL25F</item>
+        <item>SRCTZN</item>
+        <item>SRCTNW</item>
+        <item>SCINTL</item>
+        <item>SPORT</item>
+        <item>SPORTI</item>
+        <item>SPORTN</item>
+        <item>STJONF</item>
+        <item>STDNT</item>
+        <item>STDSPS</item>
+        <item>TBPAT</item>
+        <item>TEACHR</item>
+        <item>TLSMIA</item>
+        <item>THLESC</item>
+        <item>TLSMIU</item>
+        <item>THLESU</item>
+        <item>WIDOW</item>
+        <item>YOUTH</item>
+        <item>YTH2SR</item>
+        <item>YUVA</item>
+    </string-array>
+    <string-array name="conc_code_description">
+        <item>None</item>
+        <item>Aplastic Anaemia Patients (50%)</item>
+        <item>Arjuna awardee (100%)</item>
+        <item>Arjuna awardee companion (100%)</item>
+        <item>Article Clerk (50%)</item>
+        <item>Artist Lower Class (75%)</item>
+        <item>Artist Upper Class (50%)</item>
+        <item>Award 50% (50%)</item>
+        <item>Award 75% (75%)</item>
+        <item>Award 100% (100%)</item>
+        <item>Bharat Scouts/Guides (50%)</item>
+        <item>Bharat Seva Dal (25%)</item>
+        <item>Blind Concession (75%)</item>
+        <item>Blind Concession in Rajdhani/Shatabdi (25)</item>
+        <item>Blind Free Escort (100)</item>
+        <item>Cancer Patient (For 3A, SL) (100%)</item>
+        <item>Cancer Patient (For 2S, CC, FC) (75%)</item>
+        <item>Cancer Patient Escort (For 3A, SL class) (75%)</item>
+        <item>Cancer Patient (For 1A, 2A class) (50%)</item>
+        <item>Cancer Patient Escort (For 1A, 2A class) (50%)</item>
+        <item>Doctor (10%)</item>
+        <item>Dronacharya awardee (100%)</item>
+        <item>Dronacharya awardee companion (100%)</item>
+        <item>Film Technician For Lower Class (75)</item>
+        <item>Film Technician For Upper Class (50)</item>
+        <item>Public Exam(6-12yrs) (50%)</item>
+        <item>Circus Artist Lower Class (75%)</item>
+        <item>Circus Artist Upper Class (50%)</item>
+        <item>Civil International (25%)</item>
+        <item>Deaf and Dumb (50%)</item>
+        <item>Deaf and Dumb Escort (50%)</item>
+        <item>Handicap Lower Class (75%)</item>
+        <item>Handicap Escort Lower Class (75%)</item>
+        <item>Handicap 1AC 2AC (50%)</item>
+        <item>Handicap 1AC 2AC (50%)</item>
+        <item>Handicap Escort 1AC 2AC (50%)</item>
+        <item>Handicap in Rajdhani/Shatabdi (25%)</item>
+        <item>Handicap Escort in Rajdhani/Shatabdi (25%)</item>
+        <item>Heart Patient (for 3A, SL, 2S class) (75%)</item>
+        <item>Heart Patient Escort (for 3A, SL, 2S class) (75%)</item>
+        <item>Heart Patient (for 1A, 2A class) (50%)</item>
+        <item>Heart Patient Escort (for 1A, 2A class) (50%)</item>
+        <item>Heamophilia Patient (for 3A, CC, SL, 2S) (75%)</item>
+        <item>Heamophilia Patient Escort (for 3A, CC, SL, 2S) (75%)</item>
+        <item>IAFT 1709 Form D (40%)</item>
+        <item>IAFT 1720 Upper Class (50%)</item>
+        <item>Mental Escort Patient in Rajdhani/Shatabdi (25)</item>
+        <item>Mental Patient in Rajdhani/Shatabdi (25)</item>
+        <item>Industrial Worker (25%)</item>
+        <item>Kidney Patients (for 3A, SL, 2S Class) (75%)</item>
+        <item>Kidney Patient Escort (for 3A, SL, 2S Class) (75%)</item>
+        <item>Kidney Patients (for 1A, 2A Class) (50%)</item>
+        <item>Kidney Patients Escort (for 1A, 2A Class) (50%)</item>
+        <item>Kisan Concession (25%)</item>
+        <item>Kisan Concession (25%)</item>
+        <item>Mental Patient (75%)</item>
+        <item>Nurse (25%)</item>
+        <item>Polo Team (50%)</item>
+        <item>Proffessional Artist lower class (75%)</item>
+        <item>Proffessional Artist Upper class (50%)</item>
+        <item>PTO Common Wealth Country (50%)</item>
+        <item>PTO Indian Railway (66.6%)</item>
+        <item>Public Examination (50%)</item>
+        <item>Research Scholar (50)</item>
+        <item>Retired Railway Emplyoee/Widow above 70 years</item>
+        <item>Scout Concession (50%)</item>
+        <item>Sickle Cell Anaemia (50%)</item>
+        <item>Special concession (25%)</item>
+        <item>Special concession (Return mandatory) (25%)</item>
+        <item>Senior Male Citizen (40%)</item>
+        <item>Senior Female Citizen (50%)</item>
+        <item>Service Civil Inter (25%)</item>
+        <item>Sports Lower class (75%)</item>
+        <item>Sports Inter N Level FC (75%)</item>
+        <item>Sports National Level FC (50%)</item>
+        <item>ST JOHNS Ambulance (25%)</item>
+        <item>Student Concession (50%)</item>
+        <item>Student SC/ST (75%)</item>
+        <item>TB Patient (75%)</item>
+        <item>Teacher (25%)</item>
+        <item>Thalassemia Patient (for 3A, SL, 2S class)(75%)</item>
+        <item>Thalassemia Patient Escort (for 3A, SL, 2S class)(75%)</item>
+        <item>Thalassemia Patient (for 1A, 2A class)(50%)</item>
+        <item>Thalassemia Patient Escort (for 1A, 2A class)(50%)</item>
+        <item>War Widow (75%)</item>
+        <item>Youth Concession (25%)</item>
+        <item>Unemployed Youth for Interview (2S) (100%)</item>
+        <item>Yuva Concession</item>
+    </string-array>
+    <string-array name="age_code">
+        <item>8</item>
+        <item>30</item>
+        <item>61</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="age_code_description">
+        <item>CHILD AGE [5-11]</item>
+        <item>ADULT AGE [12 and above]</item>
+        <item>SENIOR CITIZEN FEMALE AGE [58 and above]</item>
+        <item>SENIOR CITIZEN MALE AGE [60 and above]</item>
+    </string-array>
+    <string-array name="important_stations">
+        <item>ABR</item>
+        <item>AGC</item>
+        <item>AF</item>
+        <item>AGA</item>
+        <item>ADI</item>
+        <item>AII</item>
+        <item>AK</item>
+        <item>ALJN</item>
+        <item>ALD</item>
+        <item>ALLP</item>
+        <item>AWR</item>
+        <item>AWY</item>
+        <item>UMB</item>
+        <item>AME</item>
+        <item>AMI</item>
+        <item>ASR</item>
+        <item>ASN</item>
+        <item>AWB</item>
+        <item>AMH</item>
+        <item>BRK</item>
+        <item>SBC</item>
+        <item>BUI</item>
+        <item>BWT</item>
+        <item>BP</item>
+        <item>BJU</item>
+        <item>BE</item>
+        <item>BST</item>
+        <item>BSL</item>
+        <item>BGS</item>
+        <item>BGM</item>
+        <item>BAY</item>
+        <item>BGP</item>
+        <item>BJP</item>
+        <item>BKN</item>
+        <item>BSP</item>
+        <item>BINA</item>
+        <item>BPL</item>
+        <item>BTI</item>
+        <item>BKSC</item>
+        <item>BBS</item>
+        <item>BWN</item>
+        <item>BXR</item>
+        <item>CLT</item>
+        <item>CDG</item>
+        <item>CPR</item>
+        <item>MAS</item>
+        <item>CHTS</item>
+        <item>CRJ</item>
+        <item>CBE</item>
+        <item>DBG</item>
+        <item>DJ</item>
+        <item>DDN</item>
+        <item>DHN</item>
+        <item>DWR</item>
+        <item>DURG</item>
+        <item>DBRT</item>
+        <item>ERS</item>
+        <item>ED</item>
+        <item>FD</item>
+        <item>FDB</item>
+        <item>FBD</item>
+        <item>GAYA</item>
+        <item>G</item>
+        <item>GKP</item>
+        <item>GR</item>
+        <item>GNT</item>
+        <item>GHY</item>
+        <item>GWL</item>
+        <item>NZM</item>
+        <item>HBJ</item>
+        <item>HJP</item>
+        <item>HW</item>
+        <item>HWH</item>
+        <item>HYB</item>
+        <item>UBL</item>
+        <item>INDB</item>
+        <item>ET</item>
+        <item>JBP</item>
+        <item>JP</item>
+        <item>JSM</item>
+        <item>JUC</item>
+        <item>JAT</item>
+        <item>JHS</item>
+        <item>JU</item>
+        <item>KLK</item>
+        <item>CNB</item>
+        <item>CAPE</item>
+        <item>KGM</item>
+        <item>KPD</item>
+        <item>HWH</item>
+        <item>KOTA</item>
+        <item>KTYM</item>
+        <item>KZJ</item>
+        <item>LKO</item>
+        <item>LDH</item>
+        <item>MAO</item>
+        <item>MDU</item>
+        <item>MMC</item>
+        <item>MAQ</item>
+        <item>MMR</item>
+        <item>MTJ</item>
+        <item>MAU</item>
+        <item>MTC</item>
+        <item>MB</item>
+        <item>MGS</item>
+        <item>BCT</item>
+        <item>CSTM</item>
+        <item>MYS</item>
+        <item>NGP</item>
+        <item>NK</item>
+        <item>NLR</item>
+        <item>NJP</item>
+        <item>NDLS</item>
+        <item>PGT</item>
+        <item>PNP</item>
+        <item>PTA</item>
+        <item>PNBE</item>
+        <item>PUNE</item>
+        <item>PURI</item>
+        <item>PTBY</item>
+        <item>RBL</item>
+        <item>RIG</item>
+        <item>R</item>
+        <item>RMM</item>
+        <item>RNC</item>
+        <item>RRME</item>
+        <item>RTM</item>
+        <item>RN</item>
+        <item>REWA</item>
+        <item>ROK</item>
+        <item>RKSH</item>
+        <item>RK</item>
+        <item>ROU</item>
+        <item>SRE</item>
+        <item>SA</item>
+        <item>SLI</item>
+        <item>STA</item>
+        <item>SNP</item>
+        <item>SCL</item>
+        <item>SML</item>
+        <item>SVKS</item>
+        <item>ST</item>
+        <item>TATA</item>
+        <item>TSI</item>
+        <item>TNA</item>
+        <item>TJ</item>
+        <item>TPTY</item>
+        <item>TPJ</item>
+        <item>TCR</item>
+        <item>TVC</item>
+        <item>TN</item>
+        <item>UDZ</item>
+        <item>UJN</item>
+        <item>BRC</item>
+        <item>BSB</item>
+        <item>VSG</item>
+        <item>BZA</item>
+        <item>VSKP</item>
+        <item>WL</item>
+        <item>WR</item>
+    </string-array>
+
+    <string name="title_activity_one">One</string>
+    <string name="title_activity_two">Two</string>
+    <string name="title_activity_three">Three</string>
+    <string name="title_activity_four">Four</string>
+    <string name="title_activity_five">Five</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="connection">Enable Your internet</string>
+    <string name="your_can_see_pnr">You can see your PNR Status card here once you add from below</string>
+    <string name="welcome_to_railgadi">Welcome to RAILGADI</string>
+    <string name="no_internet_text">Seems, You are no longer connected to internet</string>
+    <string name="get_station_information">Get Station Information</string>
+    <string name="enter_station_name_or_code">Enter Station Name or Code</string>
+    <string name="get_near_by_amenities">Get Nearby Amenities</string>
+    <string name="auto_login_information">AUTO LOGIN INFORMATION</string>
+    <string name="irctc_user_name">IRCTC Username</string>
+    <string name="irctc_password">IRCTC Password</string>
+    <string name="settings">Settings</string>
+    <string name="enter_user_name">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="hotels">HOTELS</string>
+    <string name="atm">ATM</string>
+    <string name="hospital">HOSPITAL</string>
+    <string name="restaurant">RESTAURANT</string>
+    <string name="railway_numbers">Railway Numbers</string>
+    <string name="rating">Rating</string>
+    <string name="enter_yout_ticket_pnr">Enter Your Ticket PNR Here</string>
+    <string name="via">Via</string>
+    <string name="mute_notificatians">Mute Notifications</string>
+    <string name="stop_notification">Stop Notification</string>
+    <string name="desh_ka_app">देश का ऐप</string>
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="banner_ad_unit_id">ca-app-pub-6767143384361021/7537344994</string>
+    <string name="disclaimer">- Disclaimer -</string>
+    <string name="historical_data">These data are historical and may not be accurate</string>
+    <string name="rescheduled">RESCHEDULED</string>
+    <string name="canceled">CANCELLED</string>
+    <string name="diverted">DIVERTED</string>
+    <string name="fully">Fully</string>
+    <string name="partially">Partially</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="src">Source</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="today">Today</string>
+    <string name="diverted_from">DIVERTED FROM</string>
+    <string name="diverted_to">DIVERTED_TO</string>
+    <string name="cancelled_from">CANCEL FROM</string>
+    <string name="cancelled_to">CANCEL TO</string>
+    <string name="refresh">Refresh</string>
+    <string name="train_is_here">Train is here</string>
+    <string name="passengers">Passengers</string>
+    <string name="nearest_station_name_is">* Nearest station name is :</string>
+    <string name="login">Login</string>
+    <string name="login_with_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="login_with_google">LOGIN WITH GOOGLE</string>
+    <string name="login_with_your_email">Log in with your email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="not_a_member_yet">Not a member yet ?</string>
+    <string name="sign_up_now">SIGN UP NOW</string>
+    <string name="user_name">USER NAME</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="signin_with_facebook">Sign in with Facebook</string>
+    <string name="signin_with_google">Sign in with Google</string>
+    <string name="by_clicking_here">By clicking here you are agree to all Terms and Conditions</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="sign_up">Sign up</string>
+    <string name="skip">SKIP</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="existing_user_login">Existing user? Login</string>
+    <string name="get_fares">GET FARES</string>
+    <string name="distance_shown">Distance shown here are approximate</string>
+    <string name="google_plus">Google Plus</string>
+    <string name="ok">OK</string>
+    <string name="do_you_agree_with_t_and_c"><![CDATA[Do you agree with Terms & Conditions ?]]></string>
+    <string name="enter_registered_email">Enter registered email</string>
+    <string name="train_in_next">Train in next :</string>
+    <string name="goto_signup">Go to SignUp</string>
+    <string name="search">Search</string>
+    <string name="arrival">ARRIVAL</string>
+    <string name="departure">DEPARTURE</string>
+    <string name="continue_with_gmail">Continue with Google</string>
+    <string name="click_here_for">Click here for</string>
+    <string name="by_proceeding">By proceeding you agree</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="title_activity_terms_and_condition">TermsAndConditionActivity</string>
+
+</resources>

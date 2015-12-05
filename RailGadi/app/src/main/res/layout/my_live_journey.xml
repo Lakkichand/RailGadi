@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:padding="@dimen/home_medium">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/train_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/home_big" />
+
+            <TextView
+                android:id="@+id/train_number"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_weight="1"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/twelve" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/src_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/src_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/other_big" />
+
+                <TextView
+                    android:id="@+id/src_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/src_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="bottom|center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/arrow_image"
+                    android:layout_width="@dimen/thirty_five"
+                    android:layout_height="@dimen/twenty"
+                    android:src="@drawable/shape_black_arrow" />
+
+                <TextView
+                    android:id="@+id/travel_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/train_rescheduled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dest_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/dest_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/other_big" />
+
+                <TextView
+                    android:id="@+id/dest_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/dest_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/src_platform"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/dest_platform"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/coach_position_from_engine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/light_gray" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one"
+            android:layout_marginTop="@dimen/two"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/live_status_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/three"
+            android:gravity="left"
+            android:text="Live Status :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/five"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five"
+            android:paddingTop="@dimen/five">
+
+            <TextView
+                android:id="@+id/prev_time_diff"
+                android:layout_weight="1"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:text="On Time"
+                android:textColor="@color/green"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/current_time_diff"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="On Time"
+                android:textColor="@color/green"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/next_time_diff"
+                android:layout_weight="1"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="distance"
+                android:textColor="@color/red"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five">
+
+            <ImageView
+                android:layout_width="@dimen/twenty"
+                android:layout_height="@dimen/twenty"
+                android:src="@drawable/green_circle" />
+
+            <View
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/one"
+                android:layout_weight="1"
+                android:background="@color/light_gray" />
+
+            <ImageView
+                android:layout_width="@dimen/twenty"
+                android:layout_height="@dimen/twenty"
+                android:src="@drawable/red_circle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/speed_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/five"
+            android:paddingRight="@dimen/five"
+            android:textColor="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ticket_src_name"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_big" />
+
+                <TextView
+                    android:id="@+id/ticket_dest_name"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_big" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ticket_src_time"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:id="@+id/ticket_dest_time"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/ten" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/near_station_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nearest_station_name_is"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/twelve" />
+
+                <TextView
+                    android:id="@+id/near_station_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/twelve" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one"
+            android:layout_marginTop="@dimen/three"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/two"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ticket_details_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Ticket Details : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pnr_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/two"
+                    android:paddingTop="@dimen/two"
+                    android:text="PNR: "
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/pnr_number"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/two"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/two"
+                    android:paddingTop="@dimen/two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/home_medium" />
+
+                <TextView
+                    android:id="@+id/seat_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/five"
+                    android:background="@color/red"
+                    android:paddingBottom="@dimen/two"
+                    android:paddingLeft="@dimen/ten"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingTop="@dimen/two"
+                    android:text="Seat Map"
+                    android:textSize="@dimen/home_medium"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/boogie_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red"
+                    android:paddingBottom="@dimen/two"
+                    android:paddingLeft="@dimen/ten"
+                    android:paddingRight="@dimen/ten"
+                    android:paddingTop="@dimen/two"
+                    android:textSize="@dimen/home_medium"
+                    android:text="Boogie Order"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/three">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/passengers"/>
+
+                    <TextView
+                        android:id="@+id/passenger_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/cnf_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:paddingTop="@dimen/two"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:text="S7-51" />
+
+                    <TextView
+                        android:id="@+id/passenger_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/cnf_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:paddingTop="@dimen/two"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:text="S7-51" />
+
+                    <TextView
+                        android:id="@+id/passenger_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/cnf_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:paddingTop="@dimen/two"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:text="S7-51" />
+
+                    <TextView
+                        android:id="@+id/passenger_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/cnf_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:paddingTop="@dimen/two"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:text="S7-51" />
+
+                    <TextView
+                        android:id="@+id/passenger_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/cnf_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:paddingTop="@dimen/two"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:text="S7-51" />
+
+                    <TextView
+                        android:id="@+id/passenger_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:layout_marginRight="@dimen/five"
+                        android:background="@drawable/cnf_button_selector"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/two"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five"
+                        android:paddingTop="@dimen/two"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        android:text="S7-51" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/one"
+                android:layout_marginTop="@dimen/five"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/more_info_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_big" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/more_information"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/home_medium" />
+                    <!--android:text="@string/more_info_live_journey"-->
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

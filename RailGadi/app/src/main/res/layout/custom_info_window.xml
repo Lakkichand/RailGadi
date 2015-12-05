@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shapvri"
+    android:paddingTop="@dimen/ten"
+    android:paddingLeft="@dimen/ten"
+    android:paddingBottom="@dimen/thirty"
+    android:paddingRight="@dimen/ten"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VDR"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fifteen"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vadodara"
+        android:textSize="@dimen/fifteen"/>
+
+    <TextView
+        android:id="@+id/arr_dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A: 08:00  D: 08:10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fifteen"/>
+
+    <TextView
+        android:id="@+id/hault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Hault: 10 min"
+        android:textSize="@dimen/fifteen"/>
+
+    <TextView
+        android:id="@+id/dist_from_src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="425 Km from source"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fifteen"/>
+
+</LinearLayout>

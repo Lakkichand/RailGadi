@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:androclass="http://schemas.android.com/apk/res/android" >
+
+    <item
+        androclass:id="@+id/share"
+        androclass:title="@string/share"/>
+
+    <item
+        androclass:id="@+id/rating"
+        androclass:title="@string/rating"/>
+
+    <item
+        androclass:id="@+id/feedback"
+        androclass:title="@string/feed_back"/>
+
+</menu>

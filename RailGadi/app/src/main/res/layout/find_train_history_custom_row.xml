@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/find_train_background"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/five"
+        android:paddingBottom="@dimen/home_medium"
+        android:paddingRight="@dimen/home_medium"
+        android:paddingLeft="@dimen/home_medium"
+        android:paddingTop="@dimen/five"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ten"
+                android:text="From"/>
+
+            <TextView
+                android:id="@+id/history_src_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twenty_five"
+                android:textColor="@color/black"
+                android:text="RIG"/>
+
+            <TextView
+                android:id="@+id/history_src_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ten"
+                android:text="Raigarh"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/history_arrow"
+            android:layout_width="@dimen/fifty"
+            android:layout_height="@dimen/twenty"
+            android:src="@drawable/shape_black_arrow" />
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ten"
+                android:gravity="right"
+                android:text="From"/>
+
+            <TextView
+                android:id="@+id/history_dest_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twenty_five"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:text="RIG"/>
+
+            <TextView
+                android:id="@+id/history_dest_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ten"
+                android:gravity="right"
+                android:text="Raigarh"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

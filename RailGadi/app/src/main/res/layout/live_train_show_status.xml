@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="@dimen/five"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingBottom="@dimen/home_small" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/train_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:paddingBottom="@dimen/five"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:paddingTop="@dimen/five"
+                android:text="12458"
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/train_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/five"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:paddingTop="@dimen/five"
+                android:singleLine="true"
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timing_src"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/five"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_small" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/five"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingBottom="@dimen/home_small">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/two"
+                android:paddingTop="@dimen/two"
+                android:text="Location : "
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/location_value"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/two"
+                android:paddingTop="@dimen/two"
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/next_stop_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/two"
+                android:paddingTop="@dimen/two"
+                android:text="Next Stop : "
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/next_stop_value"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/two"
+                android:paddingTop="@dimen/two"
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/train_running"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/two"
+            android:paddingTop="@dimen/two"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/last_updated"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/two"
+            android:paddingTop="@dimen/two"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_margin="@dimen/five"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/live_train_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/five"
+        android:background="@drawable/find_train_background"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingLeft="@dimen/home_small">
+
+        <TextView
+            android:id="@+id/station_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Station : "
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/station_name"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Delhi"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/train_in_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Trains in next: 4 Hrs"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_two"
+        android:orientation="horizontal"
+        android:padding="@dimen/home_small">
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="STA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="STD"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="DELAY"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="ETA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="ETD"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/live_station_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

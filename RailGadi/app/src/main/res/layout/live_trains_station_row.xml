@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten">
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_weight="1"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/five"
+            android:gravity="center"
+            android:paddingTop="@dimen/five"
+            android:paddingBottom="@dimen/five"
+            android:background="@drawable/light_red"
+            android:text="Code"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_weight="3"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/five"
+            android:gravity="left"
+            android:paddingTop="@dimen/five"
+            android:paddingBottom="@dimen/five"
+            android:text="Name"/>
+
+        </LinearLayout>
+
+</LinearLayout>

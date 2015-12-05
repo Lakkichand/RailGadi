@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/play_store"
+        android:icon="@drawable/home_playstore"
+        android:orderInCategory="10"
+        android:title="@string/rate_us"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/google_plus"
+        android:icon="@drawable/home_google_plus"
+        android:orderInCategory="10"
+        android:title="@string/google_plus"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/my_live_button"
+        android:icon="@drawable/live_journey_home"
+        android:orderInCategory="10"
+        android:title="@string/my_live_journey"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/cont_menu"
+        android:icon="@drawable/contextual_menu"
+        android:orderInCategory="10"
+        android:title="@string/cont_menu"
+        app:showAsAction="always" />
+
+
+</menu>

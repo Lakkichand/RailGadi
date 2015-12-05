@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_tab_selected">#ffffff</color>
+    <color name="text_tab_unselected">#ffdadada</color>
+
+
+    <color name="side_menu_top">#CF3135</color>
+    <color name="side_menu_child_bg">#F4F2F2</color>
+    <color name="side_menu_bottom_strip">#EEEEEE</color>
+
+    <color name="splashbg">#C73530</color>
+    <color name="colorPrimary">#DA373B</color>
+    <color name="colorPrimaryDark">#AE2C2F</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#50514f</color>
+
+
+    <color name="blue">#00f</color>
+    <color name="green">#3DE47C</color>
+    <color name="light_black">#979696</color>
+    <color name="red">#FA8080</color>
+    <color name="yellow">#FDDE6B</color>
+    <color name="orenge">#a92</color>
+    <color name="ligntblue">#009999</color>
+    <color name="lightskyblue">#B2E6FF</color>
+
+    <color name="rating_bg_gray">#E6E6E6</color>
+    <color name="pnr_line">#cccccc</color>
+
+    <item name="grey" type="color">#555555</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#131313</color>
+    <color name="gray">#C7C7C7</color>
+    <color name="lightblack">#5C5C5C</color>
+    <color name="title_color">#FFBB33</color>
+    <color name="regis_color">#55A400</color>
+    <color name="publishBtn_color">#DE593A</color>
+    <color name="moodBtn_color">#55A400</color>
+    <color name="nearbyBtn_color">#1FABC6</color>
+    <color name="home_txt_color">#617C0B</color>
+    <color name="home_btn_color">#FF8800</color>
+    <color name="home_btn_pressed">#FFB866</color>
+    <color name="title_bg_color">#668012</color>
+    <color name="light_green">#045400</color>
+
+    <color name="light_gray">#B0B0B0</color>
+
+    <color name="wl_ps_border">#993434</color>
+
+    <color name="home_dark">#131313</color>
+
+    <color name="home_light_rac">#AF994B</color>
+    <color name="home_light_wl">#AD5959</color>
+    <color name="home_light_cnf">#2D9E56</color>
+    <!--<color name="home_light_cnf">#667A32</color>-->
+    <color name="home_light_can">#848585</color>
+
+    <color name="map_icon_color">#E5C241</color>
+
+    <color name="trip_cancel_button_color">#848483</color>
+
+    <color name="default_textview_color">#8e8e8e</color>
+
+    <color name="drawer_heading">#dddddd</color>
+    <color name="drawer_head_color">#e91e63</color>
+    
+    
+    <!--code composition-->
+    <color name="deisel">#949596</color>
+    <color name="boogie_b">#D9D323</color>
+    <color name="boogie_a">#36A9D9</color>
+    <color name="boogie_gen">#EC7477</color>
+    <color name="boogie_s">#DD6FC2</color>
+    <color name="boogie_pantry">#0BC266</color>
+    <color name="boogie_2a">#5883EF</color>
+    <color name="boogie_slr">#CB9174</color>
+
+
+    <!--colors used in calendar-->
+
+    <color name="custom_background">#ececec</color>
+    <color name="calendar_background">#ececec</color>
+    <color name="custom_background_disabled">#ececec</color>
+    <color name="custom_text_selected">#fff</color>
+    <color name="custom_text_inactive">#7f778088</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_two">#ececec</color>
+    <color name="boogie_deisal">#969594</color>
+    <color name="boogie_2s">#6FD4DD</color>
+    <color name="boogie_3e">#A8C410</color>
+    <color name="boogie_ac1">#062B87</color>
+    <color name="boogie_hcp">#BF494C</color>
+    <color name="boogie_3a">#D9D323</color>
+    <color name="boogie_mailbox">#431E05</color>
+    <color name="boogie_fc">#36D987</color>
+    <color name="boogie_cc">#EDA045</color>
+    <color name="facebook_button_color">#3B5998</color>
+    <color name="google_button_color">#DA4835</color>
+    <color name="login_screen_bg">#EEEEEE</color>
+    <color name="sign_up_button_bg_color">#B9B9B9</color>
+
+
+</resources>

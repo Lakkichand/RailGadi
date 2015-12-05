@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fourty_five"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rescheduled_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rescheduled_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rescheduled"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/rescheduled_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancelled_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cancelled_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/canceled"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/cancelled_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diverted_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/diverted_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/diverted"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/diverted_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five"
+        android:gravity="center"
+        android:background="@drawable/find_train_background" >
+
+        <TextView
+            android:id="@+id/yesterday"
+            android:layout_weight="1"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:text="@string/yesterday"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/two"
+            android:layout_marginBottom="@dimen/two"
+            android:paddingTop="@dimen/five"
+            android:paddingBottom="@dimen/five"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_weight="1"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:text="@string/today"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/two"
+            android:layout_marginBottom="@dimen/two"
+            android:paddingTop="@dimen/five"
+            android:paddingBottom="@dimen/five"
+            android:background="@drawable/find_train_button_selector"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tomorrow"
+            android:layout_weight="1"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:text="@string/tomorrow"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/two"
+            android:layout_marginBottom="@dimen/two"
+            android:paddingTop="@dimen/five"
+            android:paddingBottom="@dimen/five"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/full_partial_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/cancelled_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fully_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/fully" />
+
+            <RadioButton
+                android:id="@+id/partially_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/partially" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/res_can_div_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"/>
+
+        <TextView android:id="@+id/empty_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_data_found" />
+
+    </LinearLayout>
+
+</LinearLayout>

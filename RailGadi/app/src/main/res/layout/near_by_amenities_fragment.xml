@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fourty_five"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/atm_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/atm_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/atm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/atm_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/restaurant_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/restaurant_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/restaurant"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/restaurant_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hotel_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotel_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hotels"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/hotel_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hospital_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hospital_text"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hospital"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabs_text_size" />
+
+            <View
+                android:id="@+id/hospital_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/five"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/amenities_list"
+            android:layout_width="fill_parent"
+            android:divider="@null"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

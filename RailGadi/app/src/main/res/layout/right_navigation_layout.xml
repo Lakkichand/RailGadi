@@ -1,0 +1,706 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/recent_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/station_list_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_weight="1"
+                android:text="Recent Search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+            <ImageView
+                android:id="@+id/clear_recent_search"
+                android:layout_width="@dimen/thirty_five"
+                android:layout_height="@dimen/other_big"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginRight="@dimen/ten"
+                android:src="@drawable/clear_recent_search" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/find_train_history_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/no_recent_search"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="No Recent Search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/return_journey_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_weight="1"
+                android:text="Return Journey"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/five"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/from_to_root_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/find_train_background"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/five"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from"
+                        android:textSize="@dimen/home_small" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/thirty_five"
+                            android:layout_height="@dimen/thirty_five"
+                            android:src="@drawable/shape_logo" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/ten">
+
+                            <TextView
+                                android:id="@+id/from_station_code_text"
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:text="From"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/other_big" />
+
+                            <TextView
+                                android:id="@+id/from_station_name_text"
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:text=""
+                                android:textSize="@dimen/fifteen" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/one"
+                        android:layout_marginBottom="@dimen/five"
+                        android:layout_marginTop="@dimen/five"
+                        android:background="@color/light_gray" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to"
+                        android:textSize="@dimen/home_medium" />
+
+                    <LinearLayout
+                        android:id="@+id/select_to_station_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/thirty_five"
+                            android:layout_height="@dimen/thirty_five"
+                            android:src="@drawable/shape_logo" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/ten">
+
+                            <TextView
+                                android:id="@+id/to_station_code_text"
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.5"
+                                android:text="To"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/other_big" />
+
+                            <TextView
+                                android:id="@+id/to_station_name_text"
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:text=""
+                                android:textSize="@dimen/fifteen" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:id="@+id/from_to_main_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/find_train_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/five"
+                        android:paddingLeft="@dimen/five"
+                        android:paddingRight="@dimen/five">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/five"
+                            android:text="From"
+                            android:textSize="@dimen/ten" />
+
+                        <LinearLayout
+                            android:id="@+id/select_from_station_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/thirty_five"
+                                android:layout_height="@dimen/thirty_five"
+                                android:src="@drawable/shape_logo" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/ten">
+
+                                <TextView
+                                    android:id="@+id/from_station_code_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.5"
+                                    android:text="From"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/other_big" />
+
+                                <TextView
+                                    android:id="@+id/from_station_name_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text=""
+                                    android:textSize="@dimen/fifteen" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white">
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/one"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:background="@color/light_gray" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignTop="@+id/view"
+                                android:layout_below="@id/view"
+                                android:layout_marginTop="@dimen/ten"
+                                android:paddingLeft="@dimen/five"
+                                android:text="To"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="@dimen/ten" />
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/select_to_station_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/thirty_five"
+                                android:layout_height="@dimen/thirty_five"
+                                android:src="@drawable/shape_logo" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/ten">
+
+                                <TextView
+                                    android:id="@+id/to_station_code_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.5"
+                                    android:text="To"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/other_big" />
+
+                                <TextView
+                                    android:id="@+id/to_station_name_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text=""
+                                    android:textSize="@dimen/fifteen" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/via_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/five"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@drawable/find_train_background"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/via_text_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five"
+                        android:text="@string/via"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/other_big" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_jorney_date_dialog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/five"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@drawable/find_train_background"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Journey"
+                        android:textSize="@dimen/ten" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/journey_date_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="DATE"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/twenty" />
+
+                        <TextView
+                            android:id="@+id/journey_day_textview"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/twenty"
+                            android:layout_marginRight="@dimen/ten"
+                            android:layout_weight="0.5"
+                            android:text="Day"
+                            android:textSize="@dimen/fifteen" />
+
+                        <TextView
+                            android:id="@+id/little_calendar"
+                            android:layout_width="@dimen/thirty"
+                            android:layout_height="@dimen/thirty"
+                            android:background="@drawable/shape23"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/fifteen" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/five"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@drawable/find_train_background"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Departure Time (optional)"
+                            android:textSize="@dimen/ten" />
+
+                        <TextView
+                            android:id="@+id/range_show_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0:00 to 24:00"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/ten" />
+
+                    </RelativeLayout>
+
+                    <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/departure_time_rangebar"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="@dimen/home_medium"
+                        android:layout_marginRight="@dimen/home_medium"
+                        android:layout_height="@dimen/seventy"
+                        custom:pinRadius="@dimen/eight"
+                        custom:tickEnd="24"
+                        custom:tickInterval="1"
+                        custom:tickStart="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/open_select_quota"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/five"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:layout_marginTop="@dimen/five"
+                    android:background="@drawable/find_train_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Quota"
+                        android:textSize="@dimen/ten" />
+
+                    <TextView
+                        android:id="@+id/selected_quota_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GEN"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twenty" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/find_train_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/find_train_button_selector"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twelve"
+                    android:paddingTop="@dimen/twelve"
+                    android:text="FIND TRAINS"
+                    android:layout_marginTop="@dimen/five"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/add_display_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/station_chooser_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--<SearchView
+            android:id="@+id/search_train_searchview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />-->
+
+        <EditText
+            android:id="@+id/search_train_searchview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thirty"
+            android:layout_marginLeft="@dimen/home_medium"
+            android:layout_marginRight="@dimen/home_medium"
+            android:layout_marginTop="@dimen/five"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:layout_marginTop="@dimen/five"
+            android:background="@color/light_gray" />
+
+        <ExpandableListView
+            android:id="@+id/station_chooser_list"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:groupIndicator="@null">
+
+        </ExpandableListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/close_calendar_cross"
+                android:layout_width="@dimen/fifteen"
+                android:layout_height="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/twenty"
+                android:src="@drawable/cross" />
+
+            <TextView
+                android:id="@+id/calendar_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_weight="1"
+                android:text="Select Date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/five"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/two">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:id="@+id/current_daymonth_titlebar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 July"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fifteen" />
+
+                <TextView
+                    android:id="@+id/current_day_titlebar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Saturday"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+        <com.squareup.timessquare.CalendarPickerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/calendar_background"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            app:dayBackground="@drawable/custom_calendar_bg_circle"
+            app:dayTextColor="@color/custom_calendar_text_selector"
+            app:dividerColor="@color/transparent"
+            app:headerTextColor="@color/colorPrimary"
+            app:titleTextColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/select_quota_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/select_quota_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/other_big" />
+
+            <TextView
+                android:id="@+id/select_quota_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_weight="1"
+                android:text="Select Quota"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/all_quotas_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:divider="@null" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

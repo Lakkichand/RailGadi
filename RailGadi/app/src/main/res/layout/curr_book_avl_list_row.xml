@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transparent_two"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/super_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingLeft="@dimen/home_small"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/train_name_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="16588 TATA ITR - PASSENGER"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five">
+
+            <TextView
+                android:id="@+id/going_to"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Going to Itwari - ITR"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:25"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five">
+
+            <LinearLayout
+                android:id="@+id/avl_class_seat_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/no_seat_avL_hidden_text"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thirty"
+            android:layout_marginTop="@dimen/five"
+            android:gravity="center|left"
+            android:textSize="@dimen/home_medium"
+            android:text="NO SEATS AVAILABLE"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/home_small"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingTop="@dimen/five">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/five"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/five">
+
+            <TextView
+                android:id="@+id/enter_trainnumber_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Train Number or Name"
+                android:textSize="@dimen/ten" />
+
+            <com.railgadi.customUi.CustomAutoCompleteView
+                android:id="@+id/enter_train_number_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPhonetic"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/five"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/auto_search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/five"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_search_auto"
+                android:gravity="center"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/get_timetable_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_small"
+        android:background="@drawable/find_train_button_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/ten"
+        android:paddingTop="@dimen/ten"
+        android:text="@string/get_timetable"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fav_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten">
+
+                <TextView
+                    android:id="@+id/recent_trains_text"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/ten"
+                    android:paddingTop="@dimen/ten"
+                    android:text="@string/favorites_trains" />
+
+                <TextView
+                    android:id="@+id/clear_all_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/clear_recent_trains" />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/recent_trains_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/zero"
+                android:layout_weight="1"
+                android:divider="@null"></ListView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/no_fav_trains_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/no_fav_trains"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/ten">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/other_big" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/home_medium"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/track"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/no_of_platform"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/elevation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five"
+            android:textSize="@dimen/home_medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/near_by_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/five"
+            android:textSize="@dimen/home_medium"
+            android:paddingTop="@dimen/five"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/get_near_by_amenities"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@drawable/find_train_button_selector"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="@string/get_near_by_amenities"
+        android:textColor="@color/white" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/halfmapview"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_weight="1" />
+
+</LinearLayout>

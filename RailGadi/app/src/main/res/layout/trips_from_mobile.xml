@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hundred"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/msg_popup_msg_icon"
+                android:layout_width="@dimen/fifty"
+                android:layout_height="@dimen/fourty"
+                android:layerType="software" />
+
+            <TextView
+                android:id="@+id/popup_pnr_top_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:gravity="center"
+                android:text="we found 3 new pnr in sms\nwould you like to add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center|top">
+
+            <ImageView
+                android:id="@+id/msg_popup_top_rail_icon"
+                android:layout_width="@dimen/fourty"
+                android:layout_height="@dimen/fourty"
+                android:src="@drawable/rail_icon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hundred"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/msg_popup_msg_icon"
+                    android:layout_width="@dimen/fifty"
+                    android:layout_height="@dimen/fourty"
+                    android:layerType="software" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/msg_popup_top_rail_icon"
+                    android:layout_width="@dimen/fourty"
+                    android:layout_height="@dimen/fourty"
+                    android:src="@drawable/rail_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/popup_pnr_top_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five"
+            android:layout_marginTop="@dimen/five"
+            android:gravity="center"
+            android:text="we found 3 new pnr in sms\nwould you like to add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/msg_popup_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:id="@+id/popup_add"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/fourty"
+            android:layout_margin="@dimen/five"
+            android:layout_weight="1"
+            android:background="@drawable/popup_button_red"
+            android:gravity="center"
+            android:text="ADD"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/popup_cancel"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/fourty"
+            android:layout_margin="@dimen/five"
+            android:layout_weight="1"
+            android:background="@drawable/gray"
+            android:gravity="center"
+            android:text="CANCEL"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

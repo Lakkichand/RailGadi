@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/ten"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="@dimen/zero"
+        android:layout_height="fill_parent"
+        android:gravity="center|left">
+
+        <CheckBox
+            android:id="@+id/popup_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popup_pnr_number"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:textSize="@dimen/seventeen"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/zero" />
+
+
+        <TextView
+            android:id="@+id/popup_from_to"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:textSize="@dimen/twelve"
+            android:textColor="@color/light_gray"
+            android:layout_height="@dimen/zero" />
+
+    </LinearLayout>
+
+</LinearLayout>

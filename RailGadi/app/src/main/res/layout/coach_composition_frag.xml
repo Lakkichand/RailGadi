@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/find_train_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/home_small"
+            android:paddingLeft="@dimen/home_small"
+            android:paddingRight="@dimen/home_small"
+            android:paddingTop="@dimen/five">
+
+            <!--<EditText
+                android:id="@+id/enter_train_name_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:maxLength="5" />-->
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/five"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/five">
+
+                <TextView
+                    android:id="@+id/enter_trainnumber_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Train Number or Name"
+                    android:textSize="@dimen/ten" />
+
+                <com.railgadi.customUi.CustomAutoCompleteView
+                    android:id="@+id/enter_train_number_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/five"
+                    android:inputType="textPhonetic"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/auto_search_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five"
+                android:visibility="gone"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_search_auto"
+                    android:gravity="center"
+                    android:textSize="@dimen/home_medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/get_composition_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/find_train_button_selector"
+            android:gravity="center"
+            android:paddingBottom="@dimen/ten"
+            android:paddingTop="@dimen/ten"
+            android:text="Search"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

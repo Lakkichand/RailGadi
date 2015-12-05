@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/super_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/find_train_background"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingTop="@dimen/five">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/five"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/five">
+
+                        <TextView
+                            android:id="@+id/enter_trainnumber_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Enter Train Number or Name"
+                            android:textSize="@dimen/ten" />
+
+                        <com.railgadi.customUi.CustomAutoCompleteView
+                            android:id="@+id/enter_train_number_edittext"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="textPhonetic"
+                            android:background="@android:color/transparent"
+                            android:paddingTop="@dimen/five"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/auto_search_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:padding="@dimen/five"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_search_auto"
+                            android:gravity="center"
+                            android:textSize="@dimen/home_medium" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/from_to_root_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/from_to_main_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five"
+                        android:background="@drawable/find_train_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/home_small"
+                        android:paddingLeft="@dimen/home_small"
+                        android:paddingRight="@dimen/home_small"
+                        android:paddingTop="@dimen/five">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/five"
+                            android:text="From"
+                            android:textSize="@dimen/ten" />
+
+                        <LinearLayout
+                            android:id="@+id/select_from_station_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/thirty_five"
+                                android:layout_height="@dimen/thirty_five"
+                                android:src="@drawable/shape_logo" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/ten">
+
+                                <TextView
+                                    android:id="@+id/from_station_code_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/from"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/other_big" />
+
+                                <TextView
+                                    android:id="@+id/from_station_name_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text=""
+                                    android:textSize="@dimen/home_big" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/one"
+                                android:layout_marginTop="@dimen/five"
+                                android:background="@color/light_gray" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/five"
+                                android:layout_marginTop="@dimen/two"
+                                android:text="To"
+                                android:textSize="@dimen/ten" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/select_to_station_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/thirty_five"
+                                android:layout_height="@dimen/thirty_five"
+                                android:src="@drawable/shape_logo" />
+
+                            <LinearLayout
+                                android:layout_width="@dimen/zero"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/ten">
+
+                                <TextView
+                                    android:id="@+id/to_station_code_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/to"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/other_big" />
+
+                                <TextView
+                                    android:id="@+id/to_station_name_text"
+                                    android:layout_width="@dimen/zero"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:text=""
+                                    android:textSize="@dimen/home_big" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/select_calendar_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five"
+                    android:layout_marginTop="@dimen/ten"
+                    android:background="@drawable/find_train_background"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingTop="@dimen/five">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Journey"
+                        android:textSize="@dimen/ten" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/journey_date_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="Date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/other_big" />
+
+                        <TextView
+                            android:id="@+id/journey_day_textview"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/twenty"
+                            android:layout_marginRight="@dimen/ten"
+                            android:layout_weight="0.5"
+                            android:text="Day"
+                            android:textSize="@dimen/home_big" />
+
+                        <TextView
+                            android:id="@+id/little_calendar"
+                            android:layout_width="@dimen/thirty"
+                            android:layout_height="@dimen/thirty"
+                            android:background="@drawable/shape23"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/home_big" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/open_select_quota_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five"
+                    android:layout_marginTop="@dimen/ten"
+                    android:background="@drawable/find_train_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/home_small"
+                    android:paddingLeft="@dimen/home_small"
+                    android:paddingRight="@dimen/home_small"
+                    android:paddingTop="@dimen/five">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Quota"
+                        android:textSize="@dimen/ten" />
+
+                    <TextView
+                        android:id="@+id/selected_quota_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GEN"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/other_big" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/find_train_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five"
+                    android:background="@drawable/find_train_button_selector"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/twelve"
+                    android:paddingTop="@dimen/twelve"
+                    android:text="@string/get_availability"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/recent_history_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/home_medium"
+                    android:text="@string/recent_searched"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/add_display_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/station_list_layout_hidden"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close_station_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/other_big" />
+
+            <TextView
+                android:id="@+id/station_list_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_big"
+                android:layout_weight="1"
+                android:text="List Title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/all_stop_station_list"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1"
+            android:divider="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_layout_hidden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close_calendar_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/other_big" />
+
+            <TextView
+                android:id="@+id/calendar_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_big"
+                android:layout_weight="1"
+                android:text="Select Date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+            <LinearLayout
+                android:layout_width="@dimen/zero"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/five"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/two">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+                <TextView
+                    android:id="@+id/current_daymonth_titlebar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 July"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/home_big" />
+
+                <TextView
+                    android:id="@+id/current_day_titlebar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Saturday"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.squareup.timessquare.CalendarPickerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/calendar_background"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbarStyle="outsideOverlay"
+            app:dayBackground="@drawable/custom_calendar_bg_circle"
+            app:dayTextColor="@color/custom_calendar_text_selector"
+            app:dividerColor="@color/transparent"
+            app:headerTextColor="@color/colorPrimary"
+            app:titleTextColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/history_hidden_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close_history_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_five" />
+
+            <TextView
+                android:id="@+id/select_history_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_weight="1"
+                android:text="@string/recent_searched"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/all_recent_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/five"
+            android:layout_weight="1"
+            android:divider="@null" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/quota_layout_hidden"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fifty_six"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close_quota_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="@dimen/other_big" />
+
+            <TextView
+                android:id="@+id/select_quota_title"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_big"
+                android:layout_weight="1"
+                android:text="Select Quota"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/all_quotas_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_margin="@dimen/five"
+            android:layout_weight="1"
+            android:divider="@null" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

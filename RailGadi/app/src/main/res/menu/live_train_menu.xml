@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/track"
+        android:icon="@drawable/train_tracking_top"
+        android:orderInCategory="10"
+        android:title="@string/track_now"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/refresh_timetable"
+        android:orderInCategory="10"
+        android:title="@string/refresh"
+        app:showAsAction="always" />
+
+</menu>

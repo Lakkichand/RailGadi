@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_two"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/five"
+        android:paddingTop="@dimen/five"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingBottom="@dimen/home_small">
+
+        <ImageView
+            android:id="@+id/city_icon"
+            android:layout_width="@dimen/thirty_five"
+            android:layout_height="@dimen/thirty_five"
+            android:layout_marginLeft="@dimen/five"
+            android:src="@drawable/shape_logo" />
+
+        <TextView
+            android:id="@+id/station_code"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="0.5"
+            android:text="NDLS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/other_big" />
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/station_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Bombay Central"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_medium" />
+
+            <TextView
+                android:id="@+id/before_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Before : 25 km"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.4"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TR NO:"
+                android:gravity="center"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/home_small" />
+
+            <TextView
+                android:id="@+id/train_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="12365"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/home_medium" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/alarm_bell_icon"
+            android:layout_width="@dimen/home_big"
+            android:layout_height="@dimen/home_big"
+            android:layout_marginRight="@dimen/ten"
+            android:src="@drawable/alarm_icon" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

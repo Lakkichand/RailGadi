@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.railgadi.activities.TutorialActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="1"
+        android:background="@drawable/splash_layout_selector"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tutorial_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zero"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="@dimen/home_big"
+                android:layout_height="@dimen/home_big"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/round_white_selected"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="@dimen/home_big"
+                android:layout_height="@dimen/home_big"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="@dimen/home_big"
+                android:layout_height="@dimen/home_big"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="@dimen/home_big"
+                android:layout_height="@dimen/home_big"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="@dimen/home_big"
+                android:layout_height="@dimen/home_big"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/home_big"
+            android:text="@string/goto_signup"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="@dimen/thirty_one"
+            android:layout_height="@dimen/twenty"
+            android:src="@drawable/shape_black_arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/find_train_background"
+        android:layout_marginTop="@dimen/five"
+        android:paddingTop="@dimen/five"
+        android:paddingLeft="@dimen/home_small"
+        android:paddingRight="@dimen/home_small"
+        android:paddingBottom="@dimen/home_small">
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/station_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/twelve"
+                android:singleLine="true"
+                android:text="Ahmedabad"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/km_distance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="5 Km"
+                android:singleLine="true"
+                android:textSize="@dimen/home_medium"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/station_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:padding="@dimen/five"
+            android:text="@string/station_information"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/five"
+            android:singleLine="true"
+            android:textSize="@dimen/home_small"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/live_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:padding="@dimen/five"
+            android:text="@string/live_station"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/five"
+            android:singleLine="true"
+            android:textSize="@dimen/home_small"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/disclaimer_historical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/five"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/disclaimer"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/home_medium"
+            android:text="@string/distance_shown"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

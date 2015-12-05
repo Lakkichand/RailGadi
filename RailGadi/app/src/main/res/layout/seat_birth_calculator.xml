@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/five">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_class"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/ten" />
+
+        <Spinner
+            android:id="@+id/class_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:background="@drawable/find_train_background"
+        android:orientation="vertical"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_seat_number"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/ten" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/five"
+            android:paddingTop="@dimen/five" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/calculate_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:background="@drawable/find_train_button_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/ten"
+        android:paddingTop="@dimen/ten"
+        android:text="@string/calculate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fifteen" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/five"
+        android:paddingBottom="@dimen/five">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/result_value"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fifteen" />
+
+    </LinearLayout>
+
+    <com.railgadi.customUi.TouchImageView
+        android:id="@+id/seat_map_touch_img"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layerType="software"
+        android:layout_height="@dimen/zero" />
+
+</LinearLayout>
